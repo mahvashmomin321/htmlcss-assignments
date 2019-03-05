@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HBSC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">HBSC BANK</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="active">
+                    <a href="new_acc.html">CREATE NEW ACCOUNT</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ACTITVITY<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="withdraw.html">WITHDRAW</a></li>
+                        <li><a href="deposit.html">DEPOSIT</a></li>
+                        <li><a href="fund-transfer.html">FUND TRANSFER</a></li>
+                        <li><a href="check-balance.html">CHECK BALANCE</a></li>
+                        <li><a href="show-details.html">SHOW DETAILS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="form-box">
+            <h1 class="form-heading">Create New Account</h1>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputName4">Customer Name</label>
+                    <input type="text" class="form-control" id="inputName4" pattern="^[a-zA-Z]*$" title="Enter only Alphabets" placeholder="Customer Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputContact4">Contact Number</label>
+                    <input type="text" class="form-control" id="inputContact4" pattern="^\d{10}$" maxlength="10" title="Contact Number should be 10 digits and no aplphabets" placeholder="Contact Number" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" title="enter valid email Id" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputDOB">Date Of Birth</label>
+                    <input type="date" class="form-control" id="inputDOB" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="gender">Gender</label>
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+                        </label>
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="acc-type">Account Type</label>
+                    <select class="custom-select form-control" id="acc-type" required>
+                        <option selected>Select</option>
+                        <option value="Current">Current</option>
+                        <option value="Saving">Saving</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="inputAddress">Address Line</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                </div>
+            </div>
+            
+            
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control" required>
+                        <option selected>Choose...</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttaranchal">Uttaranchal</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" pattern="^[a-zA-Z]*$" title="Enter only Alphabets" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Postal Code</label>
+                    <input type="text" class="form-control" id="inputZip"  pattern="^\d{6}$" maxlength="6" title="Enter only digits" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                        Agree Terms and Conditions
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary sbtn">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>
